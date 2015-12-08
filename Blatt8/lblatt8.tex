@@ -1,0 +1,64 @@
+\section*{Aufgabe 1 - 4 Punkte}
+Die lineare Abbildung $\alpha: \mathbb{R}^3 \rightarrow \mathbb{R}^3$ sei durch $(x,y,z)^t \mapsto (x+y+z,x-4y,-2y-4z)^t$ definiert. Weiter sei $\mathcal{C} = ((2,1,1)^t, (-1,1,0)^t,(0,0,3)^t)$, $\mathcal{D} = ((3,3,3)^t,(-3,0,1)^t, (1,3,1)^t)$. $\mathcal{B}$ bezeichne die kanonische Basis von $\mathbb{R}^3$.
+\begin{enumerate}[label=\alph*)]
+\item Zeigen Sie, dass es sich bei $\mathcal{C}$ und $\mathcal{D}$ um Basen des $\mathbb{R}^3$ handelt.\\
+\item Bestimmen Sie die Basiswechselmatrizen $S_{\mathcal{C},\mathcal{B}}, S_{\mathcal{B},\mathcal{C}}, S_{\mathcal{C},\mathcal{D}}$ und $S_{\mathcal{D},\mathcal{C}}$
+\item Berechnen Sie die Darstellungsmatrizen $A_{\alpha}^{\mathcal{B}},A_{\alpha}^{\mathcal{C}},A_{\alpha}^{\mathcal{D}},A_{\alpha}^{\mathcal{B},\mathcal{D}}$ und $A_{\alpha}^{\mathcal{D},\mathcal{B}}$.
+\item Bestimmen Sie $\mathcal{K}_\mathcal{B} ((3,2,1)^t),\mathcal{K}_\mathcal{C} ((3,2,1)^t)$ und $\mathcal{K}_\mathcal{D} ((3,2,1)^t)$
+\item Bestimmen Sie $\mathcal{K}_\mathcal{B} (\alpha(3,2,1)^t),\mathcal{K}_\mathcal{C} (\alpha(3,2,1)^t)$ und $\mathcal{K}_\mathcal{D} (\alpha(3,2,1)^t)$
+
+\end{enumerate}
+ 
+
+\section*{Aufgabe 2 - 2 Punkte}
+Sei $S$ eine invertierbare Matrix, $\mathcal{B}$ eine geordnete Basis von $V$. Zeigen Sie: Es existieren geordnete Basen $\mathbb{C}_1,\mathbb{C}_2$ von $V$ mit $S = S_{\mathcal{B}, \mathcal{C}_{1}}$ und
+ $S = S_{ \mathcal{C}_2, \mathcal{B}}$
+
+
+\section*{Aufgabe 3 - 6 Punkte}
+Sei $A = \begin{pmatrix}
+6&4&1&4\\
+-2&6&0&2\\
+3&-5&\frac{1}{4}&-1\\
+-2&2&0&2
+\end{pmatrix}$\\
+Bestimmen Sie det($A$) und det($A^2)$. Entscheiden Sie, ob $A$ invertierbar ist und bestimmen Sie ggf. $A^{-1}$ und det($A^{-1}$). Es sei
+\begin{enumerate}[label=\alph*)]
+\item $K = \mathbb{Q}$
+\item $K = \mathbb{Z}_5$ (wobei $\frac{1}{4} \equiv 4^{-1}$)
+
+\end{enumerate}
+
+\section*{Aufgabe 4 - 6 Punkte}
+Sei $\alpha: \mathbb{R}^2 \rightarrow \mathbb{R}^2$ eine Drehung um 0 mit dem Winkel $\varphi$ entgegen dem Uhrzeigersinn. $\beta: \mathbb{R}^2 \rightarrow \mathbb{R}^2$ die Spiegelung an der durch $e_1 + e_2$ aufgespannten Gerade durch $0$ und $\gamma: \mathbb{R}^2 \rightarrow \mathbb{R}^2, v \mapsto \frac{1}{2}$. Sei $\mathcal{B}$ die kanonische Basis des $\mathbb{R}^2$.
+
+\begin{enumerate}[label=\alph*)]
+\item Bestimmen Sie die Darstellungsmatrizen $A_{\alpha}^{\mathcal{B}},A_{\beta}^{\mathcal{B}},A_{\gamma}^{\mathcal{B}}$
+\item Bestimmen Sie det($A_{\alpha}^{\mathcal{B}}$), det($A_{\beta}^{\mathcal{B}}$), det($A_{\gamma}^{\mathcal{B}}$) und det($A_{\alpha \circ \beta \circ \gamma}^{\mathcal{B}}$).
+\item Entscheiden Sie, ob $\alpha \circ \beta \circ \gamma$ invertierbar ist und bestimmen Sie ggf. $A_{(\alpha \circ \beta \circ \gamma)^{-1}}^{\mathcal{B}}$
+\end{enumerate}
+
+ 
+ \section*{Aufgabe 5 - 4 Punkte}
+ Sei $K$ ein Körper. Gegeben seien zwei Matrizen $X,Y \in \mathcal{M}_n(K)$ der Form
+ \begin{center}
+ $X = \begin{pmatrix}  A&0 \\ C&D  \end{pmatrix}$ und $Y = \begin{pmatrix}  A&B \\ 0&D  \end{pmatrix}$
+ \end{center}
+ für Matrizen $A \in \mathcal{M}_k(K), B \in \mathcal{M}_{k,n-k}(K)$, $C \in \mathcal{M}_{n-k,k}(K)$ und $D \in \mathcal{M}_{n-k}(K)$. (0 bezeichnet die $k \times (n-k)-$ bzw. $(n-k) \times k-$ Nullmatrix)
+ 
+ \begin{enumerate}[label=\alph*)]
+ \item Zeigen Sie: det($X) = $ det($Y$) = det($A$) $\cdot$ det($D$) (Hinweis: Induktion nach $n$)
+ \item Berechnen Sie mit Hilfe von a) die Derteminante der Matrix\\
+ \begin{center}
+ $M = \begin{pmatrix}
+ 2&7&0&0&23&14&-98\\
+ -3&1&0&0&54&-26&72\\
+ 72&64&13&\sqrt{5}&-613&45&0\\
+ -942&11&\sqrt{5}&0&75&-3&9\\
+ 0&0&0&0&3&0&0\\
+ 0&0&0&0&0&-1&0 \\
+  0&0&0&0&0&0&4\pi
+ \end{pmatrix} \in \mathcal{M}_7(\mathbb{R}$.
+ \end{center}
+ 
+ \end{enumerate}
