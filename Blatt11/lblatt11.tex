@@ -1,0 +1,95 @@
+\documentclass[a4paper]{article}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage{enumitem}
+\usepackage{a4wide}
+\usepackage{geometry}
+\usepackage[automark]{scrpage2}
+\pagestyle{scrheadings}
+\usepackage{amssymb}
+\usepackage{ulem}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb, amstext, amsfonts, mathrsfs}
+\usepackage[procnames]{listings}
+\usepackage{color}
+\usepackage{titlesec}
+\usepackage{tikz}
+\usetikzlibrary{shapes.misc}
+\usepackage{polynom}
+\titleformat*{\section}{\large\bfseries}
+\clearscrheadfoot
+\usepackage{wasysym} %Fuer den Blitz
+\ohead{Mathematik III - Blatt 11 -  }
+\cfoot{\pagemark}
+\geometry{a4paper,left=10mm,right=10mm, top=2cm, bottom=2cm}
+\parindent0pt
+\author{ }
+\title{\vspace{-2cm}Mathematik III - Blatt 11}
+\date{\today{}}
+
+\begin{document}
+
+\maketitle
+
+%1
+\begin{enumerate}
+
+\item Sei $\mathcal{B}$ eine ONB des $\mathbb{R}^2$ und sei $\alpha: \mathbb{R}^2 \rightarrow \mathbb{R}^2$ eine lineare Abbildung mit 
+
+\begin{center}
+$A = A^{\mathcal{B}}_{\alpha} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1& -1 \\ -1 &-1\end{pmatrix}$
+\end{center}
+
+\begin{enumerate}[label=(\alph*)]
+        \item Zeigen Sie, dass $\alpha$ eine orthogonale Abbildung ist.
+        \item Entscheiden Sie, ob es sich um eine Drehung oder eine Spiegelung handelt und geben Sie im Falle einer Drehung den Drehwikel, im Falle einer Spiegelung die Spiegelungsachse an.
+\end{enumerate}
+%2
+\item \begin{enumerate}[label=(\alph*)]
+			\item Seien $\alpha,\beta : \mathbb{R}^2 \rightarrow \mathbb{R}^2$ Achsenspiegelungen an zwei Ursprungsgeraden. Zeigen Sie, dass $\alpha \circ \beta$ eine Drehung ist.
+			\item Sei $\gamma: \mathbb{R}^2 \rightarrow \mathbb{R}^2$ eine Drehung um den Nullpunkt und $\delta: \mathbb{R}^2 \rightarrow \mathbb{R}^2$ eine Achsenspiegelung an einer Ursprungsgeraden. Zeigen Sie, dass $\gamma \circ \delta$ eine Achsenspiegelung ist. Bestimmen Sie die Spiegelungsachse.
+
+		\end{enumerate}
+
+
+\item Sei die Abbildung $\alpha : \mathbb{R}^3 \rightarrow \mathbb{R}^3$ gegeben durch $A^{\mathcal{B}}_{\alpha} = 
+\begin{pmatrix}
+\frac{1}{2} &- \frac{\sqrt{6}}{4} &\frac{\sqrt{6}}{4} \\
+\frac{\sqrt{6}}{4} & \frac{3}{4} & \frac{1}{4} \\
+- \frac{\sqrt{6}}{4} & \frac{1}{4} & \frac{3}{4}
+\end{pmatrix}$
+ bezüglich der kanonischen Basis $\mathcal{B}$.
+\begin{enumerate}[label=(\alph*)]
+\item Zeigen Sie, dass es sich bei der Abbildung $\alpha$ um eine Achsendrehung handelt. 
+\item Bestimmen Sie die Drehachse von $\alpha$
+\item Bestimmen Sie eine ONB $\mathcal{C}$, sodass $A^{\mathcal{C}}_{\alpha}$ die Form $\begin{pmatrix}
+cos(\varphi) & - sin(\varphi) & 0\\
+sin(\varphi) & cos(\varphi) & 0\\
+0&0&1
+\end{pmatrix}$ hat und geben Sie den Winkel $\varphi$ an.
+\end{enumerate}
+
+%4
+\item \begin{enumerate}[label=(\alph*)]
+			\item Sei $\alpha :\mathbb{R}^2 \rightarrow \mathbb{R}^2$ eine affine Abbildung, $\alpha \neq id$. Zeigen Sie, dass $\alpha$ entweder genau einen Fixpunkt, eine Gerade aus Fixpunkten oder keine Fixpunkte hat.
+			
+			\item Seien $\lambda, \mu \in \mathbb{R}$ und sei $\alpha :\mathbb{R}^2 \rightarrow \mathbb{R}^2$ die affine Abbildung mit 
+			\begin{center}
+			$\begin{pmatrix} 1 \\ 0 \end{pmatrix} \mapsto \begin{pmatrix} \lambda -2 \\ 2 \end{pmatrix}, \begin{pmatrix} 0 \\ 1 \end{pmatrix} \mapsto \begin{pmatrix} 0 \\ \mu \end{pmatrix} , \begin{pmatrix} 1 \\ 1 \end{pmatrix} \mapsto \begin{pmatrix} \lambda + 1 \\ \mu - 1 \end{pmatrix} $.
+			\end{center}
+				\begin{enumerate}
+				\item Bestimmen Sie $A \in \mathcal{M}_2(\mathbb{R})$ mit $\alpha(v) = A \cdot v +b$ für alle $v \in \mathbb{R}^2$.
+				\item Für welche $\lambda, \mu$ hat $\alpha$ genau einen Fixpunkt, eine gerade aus Fixpunkten, bzw. keine Fixpunkte?
+				\end{enumerate}
+
+		\end{enumerate}
+
+%5
+\item Es ist $y=3x-2$ die Gleichung einer Geraden im $\mathbb{R}^2$.
+	\begin{enumerate}[label=(\alph*)]
+		\item Geben Sie diese Gerade als affinen Unterraum der Form $w + \left\langle u \right \rangle$ an mit $w,u \in \mathbb{R}^2$.
+		\item Sei $\sigma$ die Spiegelung an dieser Geraden. Geben Sie eine orthogonale 2x2-Matrix $A$ und ein $b \in \mathbb{R}^2$ an, so dass $\sigma(v) = A \cdot v + b$ für alle $v \in \mathbb{R}^2$.
+	\end{enumerate}
+
+\end{enumerate}
+\end{document}
